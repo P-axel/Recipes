@@ -15,7 +15,7 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  // nom de la prop à remplir: callback qui contient un appel à dispatch
+  
 });
 
 export default connect(
