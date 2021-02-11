@@ -13,3 +13,4 @@ Amusons-nous avec React, Redux, React Router :tada:
 - Poser les props
 - Utiliser les data statiques
 - Utiliser le router pour les différentes vues
+# Recipes
