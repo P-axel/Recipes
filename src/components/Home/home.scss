@@ -1,0 +1,59 @@
+@use 'src/styles/vars';
+
+.home {
+  .recipes-small {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+
+    .recipe-small {
+      width: 300px;
+      margin: 2em;
+      border: 1px solid #ccc;
+      border-radius: 1em;
+      overflow: hidden;
+      position: relative;
+
+      &.recipe-small--isFavorite {
+        border-color: vars.$mainColor;
+      }
+
+      .icon {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        color: vars.$mainColor;
+        background: rgba(255, 255, 255, 0.6);
+        padding: 0.3em;
+        display: flex;
+        justify-content: center;
+        border-radius: 2em;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .recipe-small-content {
+        padding: 1em;
+
+        h2 {
+          font-size: 1.2em;
+          font-weight: bold;
+        }
+
+        p {
+          margin-top: 0.3em;
+          margin-bottom: 0.3em;
+        }
+
+        a {
+          color: vars.$mainColor;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
